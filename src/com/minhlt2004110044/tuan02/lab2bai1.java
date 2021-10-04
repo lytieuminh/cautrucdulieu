@@ -1,4 +1,4 @@
-package com.minhlt200410044.tuan02;
+package com.minhlt2004110044.tuan02;
 import java.util.Scanner;
 public class lab2bai1 {
     
