@@ -39,8 +39,10 @@ void addHead(int data){
     if(head == null){
         head = newNode;
         tail = newNode;
+        tail.next = head;
     }else{
         newNode.next = head;
+        tail = newNode;
         head = newNode;
     }
 }

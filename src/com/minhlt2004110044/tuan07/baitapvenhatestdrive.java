@@ -1,6 +1,7 @@
 package com.minhlt2004110044.tuan07;
 
 
+
 public class baitapvenhatestdrive {
     public static void main(String[] args) {
         baitapvenha baitapvenha = new baitapvenha();
@@ -11,11 +12,11 @@ public class baitapvenhatestdrive {
         baitapvenha.print();
         
 
-        System.out.println("Sau khi thêm 1 nút vào cuối : 5");
+        System.out.println("thêm 1 nút vào cuối danh sách : 5");
         baitapvenha.add(5);
         baitapvenha.print();
 
-        System.out.println("Sau khi thêm vào đầu danh sách : 10");
+        System.out.println("thêm 1 nút vào đầu danh sách : 10");
         baitapvenha.addHead(10);
         baitapvenha.print();
 
@@ -32,7 +33,7 @@ public class baitapvenhatestdrive {
         baitapvenha.print();
 
         System.out.println("xóa vị số bất kỳ trong danh sách:  8");
-        baitapvenha.delete(10);
+        baitapvenha.delete(8);
         baitapvenha.print();
 
         System.out.println("sửa số 4 thành số 2");
