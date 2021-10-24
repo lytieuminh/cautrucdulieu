@@ -18,11 +18,12 @@ package com.minhlt2004110044.tuan05;
         static ArrayList <String> list = new ArrayList<String>();
         static void Menu(){
             System.out.println("=====================MENU======================");
-            System.out.println(">>1. Nhập danh sách sản phẩm .");
-            System.out.println(">>2. Sắp xếp giảm dần theo giá và xuất ra màn hình.");
-            System.out.println(">>3. Tìm và xóa sản phẩm theo tên nhập từ bàn phím.");
-            System.out.println(">>4. Xuất giá trung bình của các sản phẩm .");
-            System.out.println(">>5. Kết thúc.");
+            System.out.println(">>1. Nhập danh sách họ và tên.");
+            System.out.println(">>2. Xuất danh sách vừa nhập.");
+            System.out.println(">>3. Xuất danh sách ngẫu nhiên.");
+            System.out.println(">>4. Sắp xếp giảm dần và xuất danh sách.");
+            System.out.println(">>5. Tìm và xoá họ tên nhập từ bàn phím.");
+            System.out.println(">>6. Kết thúc.");
             System.out.print("Chọn chức năng: ");
             int key = scanner.nextInt();
             scanner.nextLine();
@@ -44,6 +45,12 @@ package com.minhlt2004110044.tuan05;
                     sapXep();
                     break;
                 case 5:
+                    System.out.println("Bạn chọn chức năng Tìm và xóa họ tên nhập từ bàn phím !");
+                    xuat();
+                    xoa();
+                    xuat();
+                    break;
+                case 6:
                     System.out.println(" kết thúc! Tạm biệt!");
                     System.exit(0);
                     break;
@@ -54,9 +61,6 @@ package com.minhlt2004110044.tuan05;
                 System.out.print("Nhập họ và tên: ");
                 String x = scanner.nextLine();
                 list.add(x);
-                System.out.print("Nhập giá tiền: ");
-                String m = scanner.nextLine();
-                list.add(m);
                 System.out.print("Nhập thêm (Y/N)?: ");
                 if(scanner.nextLine().equals("N"))
                     break;
@@ -78,10 +82,6 @@ package com.minhlt2004110044.tuan05;
         }
         static void xoa(){
 
-            for (String a : list){
-                System.out.println("Họ và tên: " +a);
-            }    
-
 
             System.out.print("Nhập tên cần xoá: ");
             String name = scanner.nextLine();
@@ -89,6 +89,7 @@ package com.minhlt2004110044.tuan05;
                 if(a.equals(name)){
                     list.remove(a);
                     System.out.println("Đã xoá!");
+                    System.out.println("danh sách sau khi xóa");
                     break;
                 }
             }
