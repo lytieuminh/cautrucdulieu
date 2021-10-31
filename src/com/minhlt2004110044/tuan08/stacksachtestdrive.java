@@ -34,9 +34,9 @@ public class stacksachtestdrive {
 
 public static void lay(Stack<sach> sach){
     sach accessedsach = sach.peek();
-    System.out.println(" tên sách đầu hàng : " + accessedsach.tensach);
-    System.out.println(" giá tiền sách đầu hàng : " + accessedsach.giaBan);
-    System.out.println(" số lượng sách đầu hàng : " + accessedsach.soLuong);
+    System.out.println(" tên sách cuối hàng : " + accessedsach.tensach);
+    System.out.println(" giá tiền sách cuối hàng : " + accessedsach.giaBan);
+    System.out.println(" số lượng sách cuối hàng : " + accessedsach.soLuong);
 }
 
 
@@ -44,9 +44,9 @@ public static void xoa(Stack<sach> sach){
     while(true){
     sach removedsach = sach.pop();
     System.out.println(" ");
-    System.out.println(" tên sách đầu hàng bị xóa " + removedsach.tensach);
-    System.out.println(" giá tiền sách đầu hàng bị xóa " + removedsach.giaBan);
-    System.out.println(" số lượng sách đầu hàng bị xóa " + removedsach.soLuong);
+    System.out.println(" tên sách cuối hàng bị xóa " + removedsach.tensach);
+    System.out.println(" giá tiền sách cuối hàng bị xóa " + removedsach.giaBan);
+    System.out.println(" số lượng sách cuối hàng bị xóa " + removedsach.soLuong);
 
     System.out.print("Nhập thêm (y/n)?: ");
     
